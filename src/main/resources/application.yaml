@@ -2,9 +2,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://ec2-54-247-70-127.eu-west-1.compute.amazonaws.com:5432/db4m9j1aiciqu9
-    username: mpguhyvuaperow
-    password: 5e09bc386116856624bc9a77d8c8292737926cc26752b1f2ce6bf73178d4caae
+    url: jdbc:postgresql://${HOST}:5432/${DB}
+    username: ${USER}
+    password: ${PASS}
 
   jpa:
     generate-ddl: true
